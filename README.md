@@ -63,7 +63,7 @@ For a window of size `W`, the [arithmetic mean][arithmetic-mean] is defined as
 ## Usage
 
 ```javascript
-import incrmmean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mmean@esm/index.mjs';
+import incrmmean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mmean@v0.2.0-esm/index.mjs';
 ```
 
 #### incrmmean( window )
@@ -133,7 +133,7 @@ mu = accumulator();
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import incrmmean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mmean@esm/index.mjs';
+import incrmmean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mmean@v0.2.0-esm/index.mjs';
 
 var accumulator;
 var v;
