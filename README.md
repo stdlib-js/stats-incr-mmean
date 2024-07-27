@@ -63,6 +63,11 @@ For a window of size `W`, the [arithmetic mean][arithmetic-mean] is defined as
 ## Usage
 
 ```javascript
+import incrmmean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mmean@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/stats-incr-mmean/tags). For example,
+
+```javascript
 import incrmmean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mmean@v0.2.2-deno/mod.js';
 ```
 
@@ -128,7 +133,7 @@ mu = accumulator();
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import incrmmean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mmean@v0.2.2-deno/mod.js';
+import incrmmean from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mmean@deno/mod.js';
 
 var accumulator;
 var v;
