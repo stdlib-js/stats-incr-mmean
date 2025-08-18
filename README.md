@@ -56,32 +56,38 @@ For a window of size `W`, the [arithmetic mean][arithmetic-mean] is defined as
 
 <!-- /.intro -->
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/stats-incr-mmean
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var incrmmean = require( '@stdlib/stats-incr-mmean' );
+incrmmean = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mmean@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var incrmmean = require( 'path/to/vendor/umd/stats-incr-mmean/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mmean@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.incrmmean;
+})();
+</script>
 ```
 
 #### incrmmean( window )
@@ -144,9 +150,14 @@ mu = accumulator();
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var randu = require( '@stdlib/random-base-randu' );
-var incrmmean = require( '@stdlib/stats-incr-mmean' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-incr-mmean@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var accumulator;
 var v;
@@ -161,6 +172,11 @@ for ( i = 0; i < 100; i++ ) {
     accumulator( v );
 }
 console.log( accumulator() );
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -261,15 +277,15 @@ Copyright &copy; 2016-2025. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/stats/incr/mean]: https://github.com/stdlib-js/stats-incr-mean
+[@stdlib/stats/incr/mean]: https://github.com/stdlib-js/stats-incr-mean/tree/umd
 
-[@stdlib/stats/incr/msum]: https://github.com/stdlib-js/stats-incr-msum
+[@stdlib/stats/incr/msum]: https://github.com/stdlib-js/stats-incr-msum/tree/umd
 
-[@stdlib/stats/incr/mstdev]: https://github.com/stdlib-js/stats-incr-mstdev
+[@stdlib/stats/incr/mstdev]: https://github.com/stdlib-js/stats-incr-mstdev/tree/umd
 
-[@stdlib/stats/incr/msummary]: https://github.com/stdlib-js/stats-incr-msummary
+[@stdlib/stats/incr/msummary]: https://github.com/stdlib-js/stats-incr-msummary/tree/umd
 
-[@stdlib/stats/incr/mvariance]: https://github.com/stdlib-js/stats-incr-mvariance
+[@stdlib/stats/incr/mvariance]: https://github.com/stdlib-js/stats-incr-mvariance/tree/umd
 
 <!-- </related-links> -->
 
